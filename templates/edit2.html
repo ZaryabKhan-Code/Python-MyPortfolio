@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    .button1 {background-color: #4CAF50;} /* Green */
+</style>
+<h2>Update Project Details</h2>
+<form action="/NewSkill" onsubmit="myFunction()" method="POST">
+  <label for="fname">Skill:</label><br>
+  <input type="text" id="fname"  name="skill"><br><br>
+  <label for="lname">Expertie Level:</label><br>
+  <input type="text" id="lname" name="expert"><br><br>
+  <button href="/dashboard"  class="button button1">Add New Skill</button>
+</form>
+<script>
+    function myFunction() {
+      alert("Update Successfully !");
+    }
+  </script>
+</body>
+</html>
+

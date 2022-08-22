@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    .button1 {background-color: #4CAF50;} /* Green */
+</style>
+<h2>Update Clients Details</h2>
+<form action="/edit/{{c.id}}" onsubmit="myFunction()" method="POST">
+  <label for="fname">Client:</label><br>
+  <input type="text" id="fname" value={{c.clients}} name="client"><br><br>
+  <label for="lname">Project:</label><br>
+  <input type="text" id="lname" value={{c.project}} name="project"><br><br>
+  <label for="lname">Work-Hour:</label><br>
+  <input type="text" id="lname" value={{c.workhour}} name="workhour"><br><br>
+  <label for="lname">Award:</label><br>
+  <input type="text" id="lname" value={{c.award}} name="award"><br><br>
+  <button href="/dashboard"  class="button button1">Update</button>
+</form>
+<script>
+    function myFunction() {
+      alert("Update Successfully !");
+    }
+  </script>
+</body>
+</html>
+

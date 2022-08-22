@@ -1,0 +1,23 @@
+{
+    "params":
+    {
+        "local_server":"mysql://root:zaryab@localhost/portfolio",
+        "Production_server":"mysql://root:zaryab@localhost/portfolio",
+        "name":"Zaryab Khan",
+        "birthday":"3 April 2003",
+        "website":"codeexpert.online:5000",
+        "phone":"+92 3327693404",
+        "city":"Karachi, Pakistan",
+        "degree":"Bachelors",
+        "email":"zk126128@gmail.com",
+        "address":"Model Colony, Karachi",
+        "freelance":"Available",
+        "gmail-user":"zk126128@gmail.com",
+        "UserName":"Zaryab",
+        "Password":"Zaryab",
+        "gmail-password":"gcfwjbdlhkpevjvl",
+        "Expert":"Flutter Dev / Flask Dev / Database Dev",
+        "intro":"Hi ! I'm under-grand student of Bs-Software Engineeing in DSU. I love to explore new things related to human intervention in technologies, Especially in computer science",
+        "intro2":"My experties belongs to flasks, cloud provider (aws, digitial ocean), object-oriented programming, data strucutres, operating systems, I love to explore new fram-work in python such as flask, in html such as jinj2 templates, in javascript such as electron etc, I holds a strong control on database management having knowledege of vareities of databases like mysql, nosql, monogodb, sqllite"
+    }
+}

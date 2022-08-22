@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: red} /* Green */
+</style>
+</head>
+<body>
+<h1>
+    Admin Portal
+</h1>
+<a href="/logout"><button class="button button2">Logout</button></a>
+<h1>
+    Clients
+</h1>
+<table>
+    <thead>
+      <tr>
+        <th>Happy Clients</th>
+        <th>Projects</th>
+        <th>Hours Of Support</th>
+        <th>Awards</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>{{c.clients}}</td>
+    <td>{{c.project}}</td>
+    <td>{{c.workhour}}</td>
+    <td>{{c.award}}</td>
+    <td><a href="/edit/{{c.id}}"><button class="button button1">Update</button></a></td>
+    </tr>
+    </tbody>
+    </table>   
+    <h1>Projects</h1>
+    <a href="/NewPost"><button class="button button1">New Project</button></a><br><br>
+    <table>
+        <thead>
+          <tr>
+            <th>Project Type</th>
+            <th>Project Detail</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Link</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        {%for work in work %}
+        <tbody>
+        <tr>
+        <td>{{work.typew}}</td>
+        <td>{{work.type1}}</td>
+        <td>{{work.namez}}</td>
+        <td>{{work.image}}</td>
+        <td>{{work.link}}</td>
+        <td><a href="/editproject/{{work.id}}"><button class="button button1">Edit</button></a></td>
+        <td><a href="/delete/{{work.id}}"><button class="button button2">Delete</button></a></td>
+        </tr>
+        </tbody>
+        {% endfor %}
+        </table>   
+
+    <h1>Skills</h1>
+    <a href="/NewSkill"><button class="button button1">New Skill</button></a><br><br>
+    <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Skill</th>
+            <th>Expertie Level</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        {%for s in s %}
+        <tbody>
+        <tr>
+        <td>{{s.id}}</td>
+        <td>{{s.skill}}</td>
+        <td>{{s.expert}}</td>
+        <td><a href="/editskill/{{s.id}}"><button class="button button1">Edit</button></a></td>
+        <td><a href="/Skill/delete/{{s.id}}"><button class="button button2">Delete</button></a></td>
+        </tr>
+        </tbody>
+        {% endfor %}
+        </table>
+    
+</body>
+</html>

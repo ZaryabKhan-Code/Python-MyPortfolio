@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    .button1 {background-color: #4CAF50;} /* Green */
+</style>
+<h2>Update Project Details</h2>
+<form action="/NewPost" onsubmit="myFunction()" method="POST">
+  <label for="fname">Project Type (Web,Card(desktop),App):</label><br>
+  <input type="text" id="fname"  name="typew"><br><br>
+  <label for="lname">Project Detail:</label><br>
+  <input type="text" id="lname" name="type1"><br><br>
+  <label for="lname">Name:</label><br>
+  <input type="text" id="lname"  name="namez"><br><br>
+  <label for="lname">Image:</label><br>
+  <input type="file" id="lname" name="image"><br><br>
+  <label for="lname">Link:</label><br>
+  <input type="text" id="lname" name="link"><br><br>
+  <button href="/dashboard"  class="button button1">New Project</button>
+</form>
+<script>
+    function myFunction() {
+      alert("Update Successfully !");
+    }
+  </script>
+</body>
+</html>
+

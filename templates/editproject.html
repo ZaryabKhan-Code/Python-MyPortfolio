@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    .button1 {background-color: #4CAF50;} /* Green */
+</style>
+<h2>Update Project Details</h2>
+<form action="/editproject/{{work.id}}" onsubmit="myFunction()" method="POST">
+  <label for="fname">Project Type (Web,Card(desktop),App):</label><br>
+  <input type="text" id="fname" value={{work.typew}} name="typew"><br><br>
+  <label for="lname">Project Detail:</label><br>
+  <input type="text" id="lname" value={{work.type1}} name="type1"><br><br>
+  <label for="lname">Name:</label><br>
+  <input type="text" id="lname" value={{work.namez}} name="namez"><br><br>
+  <label for="lname">Image:</label><br>
+  <input type="file" id="lname" value={{work.image}} name="image"><br><br>
+  <label for="lname">Link:</label><br>
+  <input type="text" id="lname" value={{work.link}} name="link"><br><br>
+  <button href="/dashboard"  class="button button1">Update</button>
+</form>
+<script>
+    function myFunction() {
+      alert("Update Successfully !");
+    }
+  </script>
+</body>
+</html>
+
